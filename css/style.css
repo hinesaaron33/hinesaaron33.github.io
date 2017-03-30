@@ -43,9 +43,10 @@
 }
 
 h1 {
-  font-family: georgia;
+  font-family: Raleway;
 margin-top: 165px;
 text-align: center;
+color: white;
 }
 
 h2 {
@@ -300,6 +301,7 @@ body {
     font-family: "Raleway";
 }
 
+
 /*This is the beginning of media query for mobile device*/
 
 @media (max-width: 767px) {
@@ -318,6 +320,9 @@ body {
         height: 350px;
         width: 100%;
         /*vertical-align: middle;*/
+    }
+    .projects3 {
+      width: 100%;
     }
     /*this is styling for the words in Column A to the left of the sprayer image*/
     #columnA {

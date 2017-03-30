@@ -10,38 +10,42 @@
     <!-- Bootstrap CSS -->
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 
     <!-- This is my css file -->
     <link href="css/style.css" type="text/css" rel="stylesheet" />
 
+    <!-- this is the beginngin of the code for smooth scrolling -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-          // Store hash
-          var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1000, function(){
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function() {
 
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
     </script>
+    <!-- this is the end of the smooth scrolling code -->
 
+    <!-- this is the script i added to move the page down below the nav bar -->
     <script>
         window.addEventListener("hashchange", function() {
             scrollBy(0, -50)
@@ -81,7 +85,7 @@
                             <a href="#contact">Contact</a>
                         </li>
                         <li>
-                            <a href="#form-main">Resumé</a>
+                            <a href="https://hinesaaron33.github.io/web-workbook/01week/resume/index.html" target=_blank>Resumé</a>
                         </li>
                     </ul>
                 </div>
@@ -102,14 +106,18 @@
                         <h1>Aaron Hines</h1>
                     </div>
                     <div>
-                        <a href="#projects" class="button1 btn btn-primary btn-lg button" role="button">Projects</a>
-                        <a href="#contact" class="button1 btn btn-primary btn-lg button" role="button">Contact</a>
-                        <a href="#services" class="button1 btn btn-primary btn-lg button" role="button">Resumé</a>
-
+                      <h3>Front End Developer | Project Management</h3>
                     </div>
-                </div>
-            </div>
-        </div>
+
+    <div>
+        <a href="#projects" class="button1 btn btn-primary btn-lg button" role="button">Projects</a>
+        <a href="#contact" class="button1 btn btn-primary btn-lg button" role="button">Let's Talk!</a>
+        <a href="https://hinesaaron33.github.io/web-workbook/01week/resume/index.html" class="button1 btn btn-primary btn-lg button" role="button" target=_blank>Resumé</a>
+
+    </div>
+    </div>
+    </div>
+    </div>
 
     </section>
 
@@ -159,20 +167,20 @@
     </section>
 
     <section id="projects1" class="container-fluid">
-        <div class="row">
-            <div class="col-xs-6 col-md-4 projects3">
+        <section class="row">
+            <div class="col-md-4 col-sm-12 projects3">
                 <h3>Tic Tac Toe</h3>
                 <a href="https://hinesaaron33.github.io/web-workbook/09week/tic-tac-toe/index.html" class="thumbnail" target="_blank">
                     <img class="projects4" src="img/tictactoe.png" alt="intro">
                 </a>
             </div>
-            <div class="col-xs-6 col-md-4 projects3">
+            <div class="col-md-4 col-sm-12 projects3">
                 <h3>Foundry Winery</h3>
                 <a href="https://hinesaaron33.github.io/web-workbook/07week/Checkpoint2/index.html" class="thumbnail" target="_blank">
                     <img class="projects4" src="img/foundry.png" alt="intro">
                 </a>
             </div>
-            <div class="col-xs-6 col-md-4 projects3">
+            <div class="col-md-4 col-sm-12 projects3">
                 <h3>Travel Blog</h3>
                 <a href="https://hinesaaron33.github.io/web-workbook/03week/blog/index.html" class="thumbnail" target="_blank">
                     <img class="projects4" src="img/blog.png" alt="intro">
@@ -180,7 +188,7 @@
             </div>
 
 
-        </div>
+        </section>
     </section>
     <!-- this is the end of my projects section -->
     <section id="contact" class="container-fluid">
@@ -189,11 +197,11 @@
         </div>
     </section>
     <div class="row contactrow">
-        <div class="col-xs-6 col-md-4 projects3">
+        <div class="col-xs-6 col-md-6 projects3">
             <h3>maaronh@gmail.com</h3>
 
         </div>
-        <div class="col-xs-6 col-md-4 projects3">
+        <div class="col-xs-6 col-md-6 projects3">
             <h3>512-845-2315</h3>
 
         </div>
