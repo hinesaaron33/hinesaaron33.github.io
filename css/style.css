@@ -43,7 +43,9 @@
 }
 
 h1 {
-  font-family: Raleway;
+  /*font-family: 'Revalia';*/
+  /*font-family: 'Raleway';*/
+  font-family: 'Merriweather Sans', sans-serif;
 margin-top: 165px;
 text-align: center;
 color: white;
@@ -53,12 +55,16 @@ h2 {
     font-family: georgia;
     color: white;
     text-align: center;
+    font-family: 'Raleway';
+
 
 }
 h3 {
   text-align: center;
   font-family: georgia;
   color: white;
+  font-family: 'Raleway';
+
 }
 #services {
   background-color: #27323A;
